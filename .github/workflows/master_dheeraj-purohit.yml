@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -31,5 +32,5 @@ jobs:
       with:
         app-name: 'dheeraj-purohit'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_71dcd3129d6e4b6ab3e019e4e601dc4a }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5275c4b69d4d44a493ac9288fb5a4d28 }}
         package: .
